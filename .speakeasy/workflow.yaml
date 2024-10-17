@@ -1,0 +1,11 @@
+workflowVersion: 1.0.0
+sources:
+    merge-code-samples-into-spec:
+        inputs:
+            - location: registry.speakeasyapi.dev/hathora/hathora/my-source
+        overlays:
+            - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-unity-cloud-sdk-unity:main
+            - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-typescript-hathora-typescript:main
+            - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-java-hathora-java:main
+        output: openapi-with-code-samples.json
+targets: {}
