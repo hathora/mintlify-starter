@@ -1,53 +1,42 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "anchors": [
+    {
+      "icon": "book-open-cover",
+      "name": "Documentation",
+      "url": "https://mintlify.com/docs"
+    },
+    {
+      "icon": "slack",
+      "name": "Community",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "icon": "newspaper",
+      "name": "Blog",
+      "url": "https://mintlify.com/blog"
+    }
+  ],
+  "colors": {
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    },
+    "dark": "#0D9373",
+    "light": "#07C983",
+    "primary": "#0D9373"
+  },
+  "favicon": "/favicon.svg",
+  "footerSocials": {
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://linkedin.com/company/mintlify",
+    "x": "https://x.com/mintlify"
+  },
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
+  "name": "Starter Kit",
   "navigation": [
     {
       "group": "Get Started",
@@ -83,9 +72,21 @@
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
+  "openapi": "openapi-with-code-samples.json",
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.mintlify.com"
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:hi@mintlify.com"
+    }
+  ]
 }
