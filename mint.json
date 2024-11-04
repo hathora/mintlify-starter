@@ -1,20 +1,10 @@
 {
-  "$schema": "https://hathora.dev/swagger.json",
   "anchors": [
     {
-      "icon": "book-open-cover",
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "icon": "slack",
-      "name": "Community",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "icon": "newspaper",
-      "name": "Blog",
-      "url": "https://mintlify.com/blog"
+      "name": "API Reference",
+      "openapi": "https://hathora.dev/swagger.json",
+      "url": "api-reference",
+      "icon": "square-terminal"
     }
   ],
   "colors": {
