@@ -2,7 +2,7 @@
   "anchors": [
     {
       "name": "API Reference",
-      "openapi": "https://hathora.dev/swagger.json",
+      "openapi": "https://spec.speakeasy.com/hathora/hathora/docs-source-with-code-samples",
       "url": "api-reference",
       "icon": "square-terminal"
     }
