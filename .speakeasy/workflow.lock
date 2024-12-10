@@ -1,0 +1,26 @@
+speakeasyVersion: 1.453.8
+sources:
+    merge-code-samples-into-spec:
+        sourceNamespace: merge-code-samples-into-spec
+        sourceRevisionDigest: sha256:086e178b7a34e07ffb831647b60548c8aefe86bffb37165cf37a5d6c44f751ee
+        sourceBlobDigest: sha256:20cd4dbd7e013d7eef9baaf36c7c495c9b56ceca7c6ca009982a2f1f4bd9689e
+        tags:
+            - latest
+            - speakeasy-sdk-regen-1729196952
+            - 0.0.1
+targets: {}
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        merge-code-samples-into-spec:
+            inputs:
+                - location: registry.speakeasyapi.dev/hathora/hathora/my-source
+            overlays:
+                - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-unity-cloud-sdk-unity:main
+                - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-typescript-hathora-typescript:main
+                - location: registry.speakeasyapi.dev/hathora/hathora/code-samples-java-hathora-java:main
+            output: openapi-with-code-samples.json
+            registry:
+                location: registry.speakeasyapi.dev/hathora/hathora/merge-code-samples-into-spec
+    targets: {}
